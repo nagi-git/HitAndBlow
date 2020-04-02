@@ -11,6 +11,9 @@ public class Play {
 
         int hitCount = Count.countHit(correctAnswerNum, inputAnswerNum);
         System.out.println("\n" + hitCount);
+
+        int blowCount = Count.countBlow(correctAnswerNum, inputAnswerNum);
+        System.out.println("\n" + blowCount);
     }
 }
 

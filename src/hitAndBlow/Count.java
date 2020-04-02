@@ -16,12 +16,13 @@ public class Count {
 	public static int countBlow(int[] correctAnswerNum, int[] inputAnswerNum) {
 		int blowCount = 0;
 		for (int i = 0; i < 4; i++) {
-			// TODO hitのカウントと同じになっているため、カウント方法を見直す必要がある
-			if (correctAnswerNum[i] == inputAnswerNum[i]) {
-				blowCount += 1;
+			for(int j = 0; j < 4; j++) {
+				if (correctAnswerNum[i] == inputAnswerNum[j]) {
+					blowCount += 1;
+				}
 			}
 		}
-		return blowCount;
+		return blowCount - Count.countHit(correctAnswerNum, inputAnswerNum);
 	}
 
 }
