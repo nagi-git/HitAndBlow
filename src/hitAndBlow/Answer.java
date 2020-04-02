@@ -23,6 +23,7 @@ public class Answer {
         	correctAnswerNum[i] = list.get(i);
             System.out.print(correctAnswerNum[i]); // TODO 後で削除する
         }
+        System.out.println(); // TODO 後で削除する
         return correctAnswerNum;
 	}
 

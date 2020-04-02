@@ -9,9 +9,9 @@ public class Input {
 		// 標準入力から値を取得する
 		int[] inputNum = new int[4];
 
+		String inputString = sc.nextLine();
 		for (int i = 0; i < 4; i++) {
-			inputNum[i] = sc.nextInt();
-
+			inputNum[i] = Integer.valueOf(inputString.substring(i, i + 1));
 		}
 		return inputNum;
 	}
