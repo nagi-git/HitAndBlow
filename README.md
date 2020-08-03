@@ -1,4 +1,4 @@
-<h1>Hit And Blow</h1>
+<h1><font color="orange">Hit And Blow</font></h1>
   <div>有名な数字当てゲームです。</div>
   <h3>ルール説明</h3>
     <div>答えの欄に数字を4桁入力すると、
